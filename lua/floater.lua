@@ -19,6 +19,11 @@ M.create_window = function()
 	})
 end
 
+vim.api.nvim_create_user_command("Todo", "lua require('floater').todo()", {})
+vim.api.nvim_create_user_command("CreateTerminal", "lua require('floater').create_terminal()", {})
+vim.api.nvim_create_user_command("Lazygit", "lua require('floater').lazygit()", {})
+vim.api.nvim_create_user_command("Lazydocker", "lua require('floater').lazydocker()", {})
+
 M.todo = function()
 	M.create_window()
 	vim.cmd("e ~/todo.md")
