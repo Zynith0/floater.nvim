@@ -6,7 +6,7 @@ It is a plugin to add some useful functionality using floating windows in neovim
 ### Lazy
 ```lua
 return {
-	"Zynith0/floater.nvim"
+	"Zynith0/floater.nvim",
 	config = function()
 		local floater = require('floater')
 		vim.keymap.set("n", "<leader>to", floater.todo)
