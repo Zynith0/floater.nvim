@@ -36,4 +36,10 @@ M.lazygit = function()
 	vim.cmd("startinsert")
 end
 
+M.lazydocker = function()
+	M.create_window()
+	vim.cmd("terminal lazydocker")
+	vim.cmd("startinsert")
+end
+
 return M
